@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        180deg,
+        rgba(107,46,228,1) 0%,
+        rgba(73,30,223,1) 50%,
+        rgb(30, 9, 105)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form{
+background: linear-gradient(
+    180deg,
+    rgb(67, 165, 223) 0%,
+    rgb(7, 181, 204) 50%,
+    rgb(5, 102, 109) 100%
+);
+padding: 50px;
+width: 420px;
+text-align: center;
+box-shadow: 0 0 20px black;
+border-radius: 20px;
+
+}
+
+.input-container{
+    position: relative;
+}
+
+.input-container > i {
+    padding:  14px;
+    border-radius: 50px;
+    background-color: #6D2FE3;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 7px;
+    right: 8px;
+}
+
+.input-container > input{
+    padding: 20px 50px 20px 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background: transparent;
+    border: 2px solid #c48afb;
+    font-size: 16px;
+    outline: none;
+    color: #fcfef7;
+}
+
+::placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+form a{
+    display: block;
+    color:#fcfef7;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.btn{
+    background-color: rgb(13, 158, 146);
+    padding: 14px 35px;
+    border: 0;
+    box-shadow: 0 0 20px rgb(42, 68, 71);
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover{
+    padding: 14px 35px;
+    border: 0;
+    box-shadow: 0 0 20px black;
+    color: white;
+    cursor: pointer;
+}
+
+.success{
+    position: absolute;
+    top: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.error{
+position: absolute;
+top: 70px;
+color: red;
+font-size: 20px;
+}
+
+.condiciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-gato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 991px){
+body{
+    padding: 30px;
+}
+
+form{
+    width: 100%;
+}     
+}
+
+/*others files (Login)*/
+
+.Login-button{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
